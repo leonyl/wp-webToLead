@@ -4,7 +4,7 @@ Plugin Name: WP - WebToLead
 Plugin URI: http://wordpress.org
 Description: A Web to lead plugin for sugarCRM using sugar API
 Version: 1.0
-Author: Leonyl Pantonial
+Author: Leonyl
 Author URI: http://wordpress.org
 License: GPLv2
 */
@@ -19,7 +19,10 @@ function my_admin_menu() {
 function wp_webtolead_admin_page(){
     ?>
     <div class="wrap">
-        <h2>Welcome To My Plugin</h2>
+        <h2>SugarCRM Settings</h2>
+        <?php
+            include "Admin/Settings.php"
+        ?>
     </div>
     <?php
 }
